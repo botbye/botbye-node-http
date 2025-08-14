@@ -18,8 +18,6 @@ function validateRequest(options) {
     'request_uri': request.url,
     'request_method': request.method,
     'remote_addr': request.connection.remoteAddress,
-    'server_port': request.connection.localPort,
-    'server_name': request.hostname || (request.headers && request.headers.host) || "",
   }
 
   return core.validateRequest({
