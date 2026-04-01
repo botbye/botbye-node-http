@@ -2,10 +2,10 @@
   "name": "botbye-node-http",
   "packageManager": "yarn@3.4.1",
   "main": "index.js",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": false,
   "dependencies": {
-    "botbye-node-core": "^1.0.7"
+    "botbye-node-core": "^1.0.8"
   },
   "devDependencies": {
     "@types/node": "^20.10.0"

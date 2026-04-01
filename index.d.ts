@@ -1,10 +1,8 @@
-import type { IncomingMessage } from 'node:http';
-import type { TBotByeInitOptions, TBotByeResponse, TValidateRequestOptions as TValidateRequestOptionsCore } from 'botbye-node-core';
-
-export function init(options: TBotByeInitOptions): typeof validateRequest;
-
-export type TValidateRequestOptions = Omit<TValidateRequestOptionsCore, "requestInfo" | "headers"> & {
-    request: IncomingMessage
-}
-
-export function validateRequest(options: TValidateRequestOptions): Promise<TBotByeResponse>;
+import { IncomingMessage } from "http";
+import { TBotByeInitOptions, TBotByeResponse, TValidateRequestOptions as TValidateRequestOptionsCore } from "botbye-node-core";
+declare function init(options: TBotByeInitOptions): typeof validateRequest;
+type TValidateRequestOptions = Omit<TValidateRequestOptionsCore, "requestInfo" | "headers"> & {
+    request: IncomingMessage;
+};
+declare function validateRequest(options: TValidateRequestOptions): Promise<TBotByeResponse>;
+export { type TValidateRequestOptions, type TBotByeResponse, init, validateRequest, };
