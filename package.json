@@ -1,13 +1,31 @@
 {
-  "name": "botbye-node-http",
-  "packageManager": "yarn@3.4.1",
-  "main": "index.js",
-  "version": "1.0.6",
-  "private": false,
-  "dependencies": {
-    "botbye-node-core": "^1.0.8"
+  "name": "@botbye/node-http",
+  "version": "2.0.0",
+  "description": "BotBye! integration for Node.js HTTP",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "require": "./src/index.js",
+      "types": "./src/index.d.ts"
+    }
   },
-  "devDependencies": {
-    "@types/node": "^20.10.0"
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://botbye.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/botbye/botbye-node-http"
+  },
+  "dependencies": {
+    "@botbye/node-core": "^2.0.0"
   }
 }
