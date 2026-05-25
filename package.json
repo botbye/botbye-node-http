@@ -1,6 +1,6 @@
 {
   "name": "@botbye/node-http",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "BotBye! integration for Node.js HTTP",
   "main": "src/index.js",
   "types": "src/index.d.ts",
@@ -26,6 +26,6 @@
     "url": "https://github.com/botbye/botbye-node-http"
   },
   "dependencies": {
-    "@botbye/node-core": "^2.0.0"
+    "@botbye/node-core": "^2.1.1"
   }
 }
